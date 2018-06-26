@@ -1,0 +1,102 @@
+
+expression=''
+expression1=''
+expression2=''
+var1 = 0
+var2 = 0
+var3 = 0
+
+operator=''
+def opnum(num1):
+    global operator
+    global expression
+    global expression1
+    global expression2
+    if num1 == '+' or num1 =='-' or num1 =='*' or num1 =='/':
+        operator = num1
+        label1.config(text=num1)
+    if num1 =='=':
+
+        if operator =='+':
+            var3=var1+ var2
+        elif operator =='-':
+            var3 = var1 - var2
+        elif operator =='*':
+            var3 = var1 * var2
+        elif operator =='/':
+            var3=var1/var2
+            expression=var3
+            label1.config(text=expression1)
+        expression=var3
+        label1.config(text=var3)
+
+
+def num(number):
+    global label1
+    global expression1
+    global expression2
+    global var2
+    global var1
+    global var3
+    global str
+    global str1
+
+    if (operator == ''):
+        expression1=(expression1+'%d'%number)
+        var1 = int(expression1)
+        label1.config(text=expression1)
+
+
+
+    elif var1 != 0 and expression2 =='':
+        label1.config(text='')
+        expression2 = (expression2 + '%d' % number)
+        var2 = int(expression2)
+        label1.config(text='')
+        label1.config(text=expression2)
+
+import tkinter as tk
+mainWindow=tk.Tk()
+label2=tk.Label(mainWindow,text='Calculator')
+label2.config(bg='blue', font=('times', 28, 'italic'))
+label2.grid(row=1, columnspan = 3,pady=5)
+
+label1=tk.Label(mainWindow,text='',width=2,height=2)
+label1.config(bg='grey', font=('times', 24, 'italic'))
+label1.grid(row=2,columnspan=3,padx=55,pady=3,ipadx=50,ipady=0)
+
+
+
+button1=tk.Button(mainWindow,text='1',command=lambda:num(1))
+button2=tk.Button(mainWindow,text='2',command=lambda:num(2))
+button3=tk.Button(mainWindow,text='3',command=lambda:num(3))
+button4=tk.Button(mainWindow,text='4',command=lambda:num(4))
+button5=tk.Button(mainWindow,text='5',command=lambda:num(5))
+button6=tk.Button(mainWindow,text='6',command=lambda:num(6))
+button7=tk.Button(mainWindow,text='7',command=lambda:num(7))
+button8=tk.Button(mainWindow,text='8',command=lambda:num(8))
+button9=tk.Button(mainWindow,text='9',command=lambda:num(9))
+button15=tk.Button(mainWindow,text='0',command=lambda:num(0))
+button10=tk.Button(mainWindow,text='+',command=lambda:opnum('+'))
+button11=tk.Button(mainWindow,text='-',command=lambda:opnum('-'))
+button12=tk.Button(mainWindow,text='*',command=lambda:opnum('*'))
+button13=tk.Button(mainWindow,text='/',command=lambda:opnum('/'))
+button14=tk.Button(mainWindow,text='=',command=lambda:opnum('='))
+button1.grid(row=3,column = 1, pady=5, ipadx=20)
+button2.grid(row=3,column = 2, pady=5,ipadx=20)
+button3.grid(row=3,column = 3, pady=5,ipadx=20)
+button4.grid(row=4,column = 1, pady=5,ipadx=20)
+button5.grid(row=4,column = 2, pady=5,ipadx=20)
+button6.grid(row=4,column = 3, pady=5,ipadx=20)
+button7.grid(row=5,column = 1, pady=5,ipadx=20)
+button8.grid(row=5,column = 2, pady=5,ipadx=20)
+button9.grid(row=5,column = 3, pady=5,ipadx=20)
+button10.grid(row=6,column = 1, pady=5,ipadx=20)
+button11.grid(row=6,column = 2, pady=5,ipadx=20)
+button12.grid(row=6,column = 3, pady=5,ipadx=20)
+button13.grid(row=7,column = 1, pady=5,ipadx=20)
+button14.grid(row=7,column = 2, pady=5,ipadx=20)
+button15.grid(row=7,column = 3, pady=5,ipadx=20)
+mainWindow.mainloop()
+
+
