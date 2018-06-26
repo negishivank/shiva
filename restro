@@ -1,0 +1,381 @@
+quant=0
+price=0
+tprice=0
+quant1=0
+quant2 = 0
+quant3 = 0
+quant4 = 0
+quant5 = 0
+quant6 = 0
+total=0
+def num(number):
+    global total
+    global quant
+    global price
+    global price1
+    global price2
+    global price3
+    global price4
+    global price5
+    global price6
+    global price7
+    global tprice
+    global quant1
+    global quant2
+    global quant3
+    global quant4
+    global quant5
+    global quant6
+    global tprice1
+    global tprice2
+    global tprice3
+    global tprice4
+    global tprice5
+    global tprice6
+    price1=225
+    price2=350
+    price3=450
+    price4=150
+    price5=215
+    price6=220
+
+
+
+    if number == 1:
+        quant1=quant1+1
+        price=quant1*price1
+        tprice1=price
+        price=0
+
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='white', font=('times', 24, 'italic'))
+        label13.grid(row=3, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice1)
+
+        total=total+tprice1
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number==2:
+        quant2 = quant2 + 1
+        price = quant2 * price2
+        tprice2=price
+        price=0
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='white', font=('times', 24, 'italic'))
+        label13.grid(row=4, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice2)
+
+        total = total + tprice2
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number == 3:
+        quant3 = quant3 + 1
+        price = quant3 * price3
+        tprice3=price
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='beige', font=('times', 24, 'italic'))
+        label13.grid(row=5, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice3)
+
+        total = total + tprice3
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number == 4:
+        quant4 = quant4 + 1
+        price=quant4*price4
+        tprice4=price
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='beige', font=('times', 24, 'italic'))
+        label13.grid(row=6, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice4)
+        total = total + tprice4
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number == 5:
+        quant5 = quant5 + 1
+        price = quant5 * price4
+        tprice5=price
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='beige', font=('times', 24, 'italic'))
+        label13.grid(row=7, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice5)
+        total = total + tprice5
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number == 6:
+        quant6 = quant6 + 1
+        price = quant6 * price5
+        tprice6=price
+
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='beige', font=('times', 24, 'italic'))
+        label13.grid(row=8, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice6)
+
+
+        total = total + tprice6
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+    elif number == 7:
+        quant7 = quant7 + 1
+        price = quant7 * price6
+
+
+
+        tprice7 = price
+        label13 = tk.Label(mainWindow, text='', width=2, height=2)
+        label13.config(bg='beige', font=('times', 24, 'italic'))
+        label13.grid(row=9, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+        label13.config(text=tprice7)
+        total = total + tprice7
+        label17 = tk.Label(mainWindow, text='', width=2, height=2)
+        label17.config(bg='white', font=('times', 24, 'italic'))
+        label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+        label17.config(text=total)
+
+    elif number ==9:
+        #% % writefile
+        #hello.txt
+        #tprice=tpriceroo = Tk()
+        root = tk.Tk()
+        root.geometry("600x220+0+0")
+        root.title("Price List")
+
+        label14 = tk.Label(root, text='', width=2, height=2)
+        label14.config(bg='grey', font=('times', 24, 'italic'))
+        label14.grid(row=1, column=1, padx=55, pady=5, ipadx=225, ipady=0)
+        label14.config(text="-thanks for shopping with us --")
+        label15 = tk.Label(root, text='', width=2, height=2)
+        label15.config(bg='grey', font=('times', 24, 'italic'))
+        label15.grid(row=2, column=1, padx=55, pady=5, ipadx=545, ipady=0)
+        label15.config(text="total amount to be paid is including SGST=9% AND CGST =9%")
+        cgst=0.09*total
+        sgst=0.09*total
+        label16 = tk.Label(root, text='', width=2, height=2)
+        label16.config(bg='grey', font=('times', 24, 'italic'))
+        label16.grid(row=4, column=1, padx=5, pady=5, ipadx=90, ipady=0)
+        label16.config(text='sgst = ')
+        label21 = tk.Label(root, text='', width=2, height=2)
+        label21.config(bg='grey', font=('times', 24, 'italic'))
+        label21.grid(row=4, column=2, padx=0, pady=0, ipadx=90, ipady=0)
+        cgst = 0.09 * total
+        sgst = 0.09 * total
+        label21.config(text=cgst)
+        label22 = tk.Label(root, text='', width=2, height=2)
+        label22.config(bg='grey', font=('times', 24, 'italic'))
+        label22.grid(row=3, column=1, padx=5, pady=5, ipadx=90, ipady=0)
+
+        label22.config(text='cgst=')
+
+        label23 = tk.Label(root, text='', width=2, height=2)
+        label23.config(bg='grey', font=('times', 24, 'italic'))
+        label23.grid(row=3, column=2, padx=5, pady=5, ipadx=90, ipady=0)
+        label23.config(text=sgst)
+
+        label25 = tk.Label(root, text='', width=2, height=2)
+        label25.config(bg='grey', font=('times', 24, 'italic'))
+        label25.grid(row=5, column=1, padx=5, pady=5, ipadx=90, ipady=0)
+        label25.config(text='total amount =')
+        total=total+sgst+cgst
+        label26 = tk.Label(root, text='', width=2, height=2)
+        label26.config(bg='grey', font=('times', 24, 'italic'))
+        label26.grid(row=5, column=2, padx=5, pady=5, ipadx=90, ipady=0)
+        label26.config(text=total)
+
+        root.mainloop()
+
+
+import tkinter as tk
+
+import random
+
+
+
+
+
+mainWindow=tk.Tk()
+mainWindow.title("Restaurant Management System")
+label2=tk.Label(mainWindow,text='Restaurant Management')
+label2.config(bg='blue', font=('times', 34, 'italic'))
+label2.grid(row=1, columnspan = 3,pady=5)
+label1=tk.Label(mainWindow,text='',width=2,height=2)
+label1.config(bg='grey', font=('times', 24, 'italic'))
+label1.grid(row=2,column=1,padx=95,pady=5,ipadx=105,ipady=0)
+label1.config(text='Reference number')
+label3=tk.Label(mainWindow,text='',width=2,height=2)
+label3.config(bg='green', font=('times', 24, 'italic'))
+label3.grid(row=2,column=2,padx=30,pady=15,ipadx=35,ipady=0)
+
+ref=random.randint(1001,20300)
+label3.config(text=ref)
+
+label8=tk.Label(mainWindow,text='',width=2,height=2)
+label8.config(bg='white', font=('times', 24, 'italic'))
+label8.grid(row=2,column=3,padx=30,pady=15,ipadx=35,ipady=0)
+label8.config(text='price')
+button1=tk.Button(mainWindow,text='more',command=lambda:num(1))
+button2=tk.Button(mainWindow,text='more',command=lambda:num(2))
+button3=tk.Button(mainWindow,text='more',command=lambda:num(3))
+button4=tk.Button(mainWindow,text='more',command=lambda:num(4))
+button5=tk.Button(mainWindow,text='more',command=lambda:num(5))
+button6=tk.Button(mainWindow,text='more',command=lambda:num(6))
+button7=tk.Button(mainWindow,text='more',command=lambda:num(7))
+
+button9=tk.Button(mainWindow,text='save',command=lambda:num(9))
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=3, column=2, padx=55, pady=5, ipadx=45, ipady=0)
+label4.config(text='burger')
+
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=4, column=2, padx=55, pady=5, ipadx=45, ipady=0)
+label4.config(text='dosa')
+
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=5, column=2, padx=55, pady=5, ipadx=45, ipady=0)
+label4.config(text='noodels')
+
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=6, column=2, padx=55, pady=5, ipadx=45, ipady=0)
+label4.config(text='donuts')
+
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=7, column=2, padx=55, pady=5, ipadx=45, ipady=0)
+label4.config(text='hot coffee')
+
+label4 = tk.Label(mainWindow, text='', width=2, height=2)
+label4.config(bg='green', font=('times', 24, 'italic'))
+label4.grid(row=8, column=2, padx=65, pady=5, ipadx=55, ipady=0)
+label4.config(text='cold coffee')
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+
+label5.grid(row=3, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price1 = 225
+label5.config(text=price1)
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=4, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price2 = 350
+label5.config(text=price2)
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=5, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price3 = 450
+label5.config(text=price3)
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=6, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price4 = 150
+label5.config(text=price4)
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=7, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price5 = 215
+label5.config(text=price5)
+
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=8, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price6 = 220
+label5.config(text=price6)
+
+label5 = tk.Label(mainWindow, text='', width=2, height=2)
+label5.config(bg='grey', font=('times', 24, 'italic'))
+label5.grid(row=7, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+label5.config(text=price6)
+label5.grid(row=9, column=3, padx=5, pady=5, ipadx=25, ipady=0)
+price7 = 210
+label5.config(text=price7)
+
+
+button1.grid(row=3,column = 1, pady=5, ipadx=0)
+button2.grid(row=4,column = 1, pady=5,ipadx=0)
+button3.grid(row=5,column = 1, pady=5,ipadx=0)
+button4.grid(row=6,column = 1, pady=5,ipadx=0)
+button5.grid(row=7,column = 1, pady=5,ipadx=0)
+button6.grid(row=8,column = 1, pady=5,ipadx=0)
+button7.grid(row=9,column = 1, pady=5,ipadx=0)
+
+button9.grid(row=7,column=8 , pady=5,ipadx=20 )
+label19 = tk.Label(mainWindow, text='', width=2, height=2)
+label19.config(bg='grey', font=('times', 24, 'italic'))
+label19.grid(row=8, column=8, padx=5, pady=5, ipadx=155, ipady=0)
+
+label19.config(text="CGST=9%  SGST=9%")
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=3, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=4, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=5, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=6, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=7, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label13 = tk.Label(mainWindow, text='', width=2, height=2)
+label13.config(bg='white', font=('times', 24, 'italic'))
+label13.grid(row=8, column=5, padx=55, pady=5, ipadx=45, ipady=0)
+label13.config(text=0)
+
+label14 = tk.Label(mainWindow, text='', width=2, height=2)
+label14.config(bg='white', font=('times', 24, 'italic'))
+label14.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+label14.config(text="sub total \= ")
+
+
+label17 = tk.Label(mainWindow, text='', width=2, height=2)
+label17.config(bg='white', font=('times', 24, 'italic'))
+label17.grid(row=5, column=8, padx=55, pady=5, ipadx=45, ipady=0)
+label17.config(text=total)
+
+
+mainWindow.mainloop()
